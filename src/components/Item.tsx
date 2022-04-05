@@ -1,14 +1,16 @@
 import { FC } from "react";
 
 interface ItemProps {
-  item: any;
+  title: any;
+  year: any;
+  origin: any;
 }
-const Item: FC<ItemProps> = ({ item }) => {
+const Item: FC<ItemProps> = ({ title, year, origin }) => {
   return (
     <div style={{ display: "flex" }}>
-      <p>{item.Title}</p>
-      <p>{item.Year}</p>
-      <p>{item.Origin}</p>
+      <p>{title}</p>
+      <p>{year}</p>
+      <p>{origin}</p>
     </div>
   );
 };

@@ -10,7 +10,7 @@ const List: FC<ListProps> = ({ items }) => {
     <ul>
       {items.map((item, i) => (
         <li key={i}>
-          <Item item={item} />
+          <Item title={item.Title} year={item.Year} origin={item.Origin} />
         </li>
       ))}
     </ul>
